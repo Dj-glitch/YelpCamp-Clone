@@ -1,6 +1,6 @@
-// if (process.env.NODE_ENV !== 'production') {
-// 	require('dotenv').config()
-// }
+if (process.env.NODE_ENV !== 'production') {
+	require('dotenv').config()
+}
 
 require('dotenv').config()
 
@@ -102,7 +102,11 @@ const styleSrcUrls = [
 	'https://use.fontawesome.com',
 	'https://cdn.jsdelivr.net',
 ]
-const connectSrcUrls = ['https://api.mapbox.com', 'https://*.tiles.mapbox.com', 'https://events.mapbox.com']
+const connectSrcUrls = [
+	'https://api.mapbox.com',
+	'https://*.tiles.mapbox.com',
+	'https://events.mapbox.com',
+]
 const fontSrcUrls = []
 app.use(
 	helmet.contentSecurityPolicy({

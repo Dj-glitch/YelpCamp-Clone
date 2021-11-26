@@ -26,8 +26,7 @@ const campgroundRoutes = require('./routes/campgrounds')
 const reviewRoutes = require('./routes/reviews')
 const { Store } = require('express-session')
 const MongoDBStore = require('connect-mongo')
-const dbUrl = 'mongodb://localhost:27017/yelp-camp' || process.env.DB_URL
-
+const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp'
 // 'mongodb://localhost:27017/yelp-camp'
 mongoose.connect(dbUrl, {
 	useNewUrlParser: true,
@@ -173,3 +172,4 @@ const port = process.env.PORT || 3000
 app.listen(port, () => {
 	console.log(`Serving on port ${port}`)
 })
+  

@@ -29,7 +29,8 @@ body {
 	border-bottom-color: white;
 }
 
-.btn-secondary .btn-secondary:hover {
+.btn-secondary,
+.btn-secondary:hover {
 	color: #333;
 	text-shadow: none;
 }
